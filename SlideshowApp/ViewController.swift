@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         for i in 1...numberOfImage {
-            let image = UIImage(named: "cat\(i)")
+            let image = UIImage(named: "cat\(i).jpg")
             imageArray.append(image!)
         }
         imageView.image = imageArray[arrayIndex]
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     
     func slideshowStart() {
         self.isStarted = true
-        startOrStopButton.setImage(UIImage(named: "stop"), for: UIControl.State.normal)
+        startOrStopButton.setImage(UIImage(named: "stop.jpeg"), for: UIControl.State.normal)
         previousButton.isEnabled = false
         nextButton.isEnabled = false
         self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(slideshow), userInfo: nil, repeats: true)
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     
     func slideshowStop() {
         self.isStarted = false
-        startOrStopButton.setImage(UIImage(named: "start"), for: UIControl.State.normal)
+        startOrStopButton.setImage(UIImage(named: "start.jpeg"), for: UIControl.State.normal)
         previousButton.isEnabled = true
         nextButton.isEnabled = true
         self.timer.invalidate()
