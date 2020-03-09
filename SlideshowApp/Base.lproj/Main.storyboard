@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="Wtv-h0-M9S">
-                                <rect key="frame" x="103" y="512" width="208" height="50"/>
+                                <rect key="frame" x="103" y="523" width="208" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bc-1n-xUj">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -24,7 +24,7 @@
                                             <constraint firstAttribute="height" constant="50" id="8f8-GE-wm6"/>
                                             <constraint firstAttribute="width" constant="50" id="OV8-Bt-Yfx"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="left"/>
+                                        <state key="normal" title="Button" image="left.jpeg"/>
                                         <connections>
                                             <action selector="previousImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1M2-pc-Cc9"/>
                                         </connections>
@@ -35,7 +35,7 @@
                                             <constraint firstAttribute="width" constant="50" id="E5b-8V-phY"/>
                                             <constraint firstAttribute="height" constant="50" id="fKR-le-boW"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="start"/>
+                                        <state key="normal" title="Button" image="start.jpeg"/>
                                         <connections>
                                             <action selector="startOrStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEr-zw-ctd"/>
                                         </connections>
@@ -46,18 +46,20 @@
                                             <constraint firstAttribute="width" constant="50" id="APa-vk-4QR"/>
                                             <constraint firstAttribute="height" constant="50" id="Jkz-zu-fzb"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="right"/>
+                                        <state key="normal" title="Button" image="right.jpeg"/>
                                         <connections>
                                             <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bqV-2g-kVb"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SOw-93-MAx">
-                                <rect key="frame" x="107" y="162" width="200" height="200"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SOw-93-MAx">
+                                <rect key="frame" x="107" y="248" width="200" height="200"/>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="RQs-sQ-UPi"/>
                                     <constraint firstAttribute="height" constant="200" id="gLr-vw-A8z"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="m5r-Ij-ooB"/>
                                     <constraint firstAttribute="width" constant="200" id="zcV-jc-FII"/>
                                 </constraints>
                                 <connections>
@@ -67,10 +69,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Wtv-h0-M9S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Wh-cB-FOo"/>
                             <constraint firstItem="SOw-93-MAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXr-ty-bZm"/>
-                            <constraint firstItem="Wtv-h0-M9S" firstAttribute="top" secondItem="SOw-93-MAx" secondAttribute="bottom" constant="150" id="YHn-PN-y8t"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wtv-h0-M9S" secondAttribute="bottom" constant="300" id="bZI-RC-1Zl"/>
+                            <constraint firstItem="SOw-93-MAx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="DfE-W5-6bS"/>
+                            <constraint firstItem="SOw-93-MAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uwk-Rz-ZLq"/>
+                            <constraint firstItem="Wtv-h0-M9S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="bZW-4y-TjN"/>
+                            <constraint firstItem="Wtv-h0-M9S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hue-YJ-VHd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -99,20 +102,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mhN-v7-eay">
-                                <rect key="frame" x="57" y="58" width="300" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mhN-v7-eay">
+                                <rect key="frame" x="57" y="121" width="300" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="Ogw-Gi-Ngy"/>
-                                    <constraint firstAttribute="width" constant="300" id="ngE-YE-b4B"/>
+                                    <constraint firstAttribute="height" constant="300" id="D1S-oN-OkG"/>
+                                    <constraint firstAttribute="width" constant="300" id="WZP-6w-gvD"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDP-e4-aLe">
-                                <rect key="frame" x="182" y="458" width="50" height="50"/>
+                                <rect key="frame" x="182" y="476" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Ej8-p5-Fuh"/>
-                                    <constraint firstAttribute="height" constant="50" id="iYf-3F-q3C"/>
+                                    <constraint firstAttribute="width" constant="50" id="5NS-sM-bnH"/>
+                                    <constraint firstAttribute="height" constant="50" id="nFN-7U-6Dm"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="back"/>
+                                <state key="normal" title="Button" image="back.jpeg"/>
                                 <connections>
                                     <action selector="back:" destination="MbK-Yx-ymw" eventType="touchUpInside" id="NUI-Fm-2tA"/>
                                 </connections>
@@ -120,10 +123,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="mhN-v7-eay" firstAttribute="centerX" secondItem="cc7-7v-ZFz" secondAttribute="centerX" id="VbG-0I-gRE"/>
-                            <constraint firstItem="NWA-o1-TRW" firstAttribute="bottom" secondItem="KDP-e4-aLe" secondAttribute="bottom" constant="300" id="YzD-Sz-A8N"/>
-                            <constraint firstItem="KDP-e4-aLe" firstAttribute="centerX" secondItem="cc7-7v-ZFz" secondAttribute="centerX" id="gKL-YY-W0D"/>
-                            <constraint firstItem="KDP-e4-aLe" firstAttribute="top" secondItem="mhN-v7-eay" secondAttribute="bottom" constant="100" id="i2b-GN-Gsp"/>
+                            <constraint firstItem="mhN-v7-eay" firstAttribute="centerX" secondItem="cc7-7v-ZFz" secondAttribute="centerX" id="0Z5-LW-nHw"/>
+                            <constraint firstItem="mhN-v7-eay" firstAttribute="centerY" secondItem="cc7-7v-ZFz" secondAttribute="centerY" constant="-150" id="87m-al-nZ9"/>
+                            <constraint firstItem="KDP-e4-aLe" firstAttribute="centerX" secondItem="cc7-7v-ZFz" secondAttribute="centerX" id="Ize-7Y-WcF"/>
+                            <constraint firstItem="KDP-e4-aLe" firstAttribute="centerY" secondItem="cc7-7v-ZFz" secondAttribute="centerY" constant="80" id="dI5-gY-elW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NWA-o1-TRW"/>
                     </view>
@@ -138,9 +141,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="256" height="256"/>
-        <image name="left" width="256" height="256"/>
-        <image name="right" width="256" height="256"/>
-        <image name="start" width="256" height="256"/>
+        <image name="back.jpeg" width="256" height="256"/>
+        <image name="cat1.jpg" width="384" height="255.83999633789062"/>
+        <image name="left.jpeg" width="256" height="256"/>
+        <image name="right.jpeg" width="256" height="256"/>
+        <image name="start.jpeg" width="256" height="256"/>
     </resources>
 </document>
